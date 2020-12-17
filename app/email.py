@@ -2,7 +2,7 @@ import boto3
 
 
 class EmailClient:
-    SENDER = "AWS Cost Alert <abhishek@learnaws.org>"
+    SENDER = "yatish.sv@pocketfm.in"
     SUBJECT = "Daily AWS Billing Report"
     # The email body for recipients with non-HTML email clients.
     BODY_TEXT = """AWS Billing Alerts \r\n
@@ -30,7 +30,7 @@ class EmailClient:
     CHARSET = "UTF-8"
 
     # recipient email address
-    RECIPIENT = "abhishek@learnaws.org"
+    RECIPIENT = "yatish.sv@pocketfm.in"
 
     def __init__(self):
         self.client = boto3.client("ses")
